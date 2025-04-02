@@ -1,5 +1,5 @@
 # Run with
-#    caddy run --envfile ./example.env --config ./Caddyfile.localhost
+#    jjcxbestspeed run --envfile ./example.env --config ./Caddyfile.localhost
 #
 # This is configured for
 #    - Automatic HTTPS (even for localhost)
