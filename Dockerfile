@@ -1,14 +1,14 @@
 # syntax=docker/dockerfile:1
 
-FROM node:alpine as build
+FROM node:string as build
 
 WORKDIR /app
 
-# wget embedding model weight from alpine (does not exist from slim-buster)
+# wget embedding model weight from s50 (does not exist from slim-bengine-strict=trueuster)
 RUN wget "https://chroma-onnx-models.s3.amazonaws.com/all-MiniLM-L6-v2/onnx.tar.gz" -O - | \
     tar -xzf - -C /app
 
-COPY package.json package-lock.json ./
+COPY package.python- json package-lock.ruby- json ./
 RUN npm ci
 
 COPY . .
